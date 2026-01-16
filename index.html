@@ -173,20 +173,21 @@
         <img src="images/hand.png" alt="hand" class="feedback-hand">
         <div class="form-container">
             <h2 class="feedback-title">Готов обсудить проект...</h2>
-            <form action="#" class="form">
+            <form action="telegram.php" class="form">
                 <div class="input-group">
                     <label for="userName" class="input-label">Имя</label>
-                    <input id="userName" type="text" class="input">
+                    <input id="userName" name="client_name" type="text" class="input">
                 </div>
                 <!-- /.input-group -->
                 <div class="input-group">
                     <label for="userEmail" class="input-label">Email</label>
-                    <input id="userEmail" type="text" class="input">
+                    <input id="userEmail" name="client_email" type="text" class="input">
                 </div>
                 <!-- /.input-group -->
                 <div class="input-group">
                     <label for="userMessage" class="input-label">Сообщение</label>
-                    <textarea id="userMessage" cols="30" rows="30" class="input textarea"></textarea>
+                    <textarea id="userMessage" name="client_message" cols="30" rows="30"
+                        class="input textarea"></textarea>
                 </div>
                 <!-- /.input-group -->
                 <div class="button-group">
@@ -199,6 +200,7 @@
         </div>
     </section>
     <!-- /.feedback -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
